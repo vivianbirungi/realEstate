@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
                 </div>
                     {FOOTER.categories.map((category,index)=>(
-                        <div className="w-full sm:w-1/2 lg:w-2/12 p-4">
+                        <div key={index} className="w-full sm:w-1/2 lg:w-2/12 p-4">
                             <h3 className="font-semibold uppercase pb-4">{category.name}</h3>
                             <ul>
                                 {category.links.map((link,index)=>(
